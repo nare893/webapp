@@ -2,367 +2,833 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home! welcome</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourly - Travel agancy</title>
 
-    <script src="./head.js"></script>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-    <link rel="stylesheet" href="./nav.css">
-    <link rel="stylesheet" href="./header.css">
-    <link rel="stylesheet" href="./about.css">
-    <link rel="stylesheet" href="./footer.css">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="tourist.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
 
+<body id="top">
 
-<body>
-    <!-- ==============================   nav   ================================ -->
+  <!-- 
+    - #HEADER
+  -->
 
-    <nav>
-        <i class="fa-solid fa-phone"></i>
-        <p>Need Support? 1-8X0-666-8X88</p>
-        <i class="fa-solid fa-envelope"></i>
-        <p>info@themevessel.com</p>
-    </nav>
+  <header class="header" data-header>
 
+    <div class="overlay" data-overlay></div>
 
+    <div class="header-top">
+      <div class="container">
 
-    <!-- ===================================   header   ================================ -->
-    <header id="head">
-        <img src="./images/black-logo.png" alt="">
-        <div class="hamburger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
+        <a href="tel:+91 7338143119" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+
+            <p class="helpline-number">+91 (93800) 4567 </p>
+          </div>
+
+        </a>
+
+        <a href="#" class="logo">
+          <img src="https://raw.githubusercontent.com/codewithsadee/tourly/8b86a3737ef1a6bade31c395695721363a03c99b/assets/images/logo.svg" alt="Tourly logo">
+        </a>
+
+        <div class="header-btn-group">
+
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
         </div>
-        <ul class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="./aboutUs.html">About Us</a></li>
-            <li><a href="./contactUs.html">Contact Us</a></li>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
         </ul>
-    </header>
-    <main>
-        <div>
-            <h1>WELCOME TO AUTO CAR JSP</h1>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. sed do eiusmod</P>
-        </div>
-    </main>
-    <div class="color">
 
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="https://raw.githubusercontent.com/codewithsadee/tourly/8b86a3737ef1a6bade31c395695721363a03c99b/assets/images/logo-blue.svg" alt="Tourly logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>about us</a>
+            </li>
+
+            <li>
+              <a href="#destination" class="navbar-link" data-nav-link>destination</a>
+            </li>
+
+            <li>
+              <a href="#package" class="navbar-link" data-nav-link>packages</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <button class="btn btn-primary">Book Now</button>
+
+      </div>
     </div>
 
+  </header>
 
 
 
 
-    <!-- ================================  Featured car  =============================== -->
-    <div class="featured-cars">
-        <div class="facility">
-            <h1>TYPES OF CAR</h1>
-            <h2>FEATURED CAR</h2>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <h2 class="h1 hero-title">Journey to explore world</h2>
+
+          <p class="hero-text">
+            Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos
+            voluptatibus habitant?
+            Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-primary">Learn more</button>
+
+            <button class="btn btn-secondary">Book now</button>
+          </div>
+
         </div>
-        <div class="card">
-            <div class="card1">
-                <div class="image"><img src="./images/car-1.jpg" alt=""></div>
-                <h1>LOMBARGHINI</h1>
-                <div class="feature">
-                    <p>NEW CAR / AUTOMATIC / SPORTS</p>
-                    <div class="feature1">
-                        <p><i class="fa-solid fa-gas-pump" id="f1"></i> Petrol</p>
-                        <p><i class="fa-solid fa-road" id="f1"></i> 4,000 km</p>
-                        <br><br>
-                        <p><i class="fa-solid fa-car" id="f1"></i> Sport</p>
-                        <p><i class="fa-solid fa-gear" id="f1"></i> Blue</p>
-                        <p><i class="fa-regular fa-calendar-days" id="f1"></i> 2022</p>
-                    </div>
-                </div>
-                <hr>
-                <p id="fas"><i class="fa-solid fa-star" id="f1"></i><i class="fa-solid fa-star" id="f1"></i><i
-                        class="fa-solid fa-star" id="f1"></i><i class="fa-solid fa-star" id="f1"></i><i
-                        class="fa-regular fa-star" id="f1"></i>(65 Reviews)</p>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TOUR SEARCH
+      -->
+
+      <section class="tour-search">
+        <div class="container">
+
+          <form action="" class="tour-search-form">
+
+            <div class="input-wrapper">
+              <label for="destination" class="input-label">Search Destination*</label>
+
+              <input type="text" name="destination" id="destination" required placeholder="Enter Destination"
+                class="input-field">
             </div>
-            <div class="card1">
-                <div class="image"><img src="./images/car-2.jpg" alt=""></div>
-                <h1>FERRARI RED CAR</h1>
-                <div class="feature">
-                    <p>NEW CAR / AUTOMATIC / SPORTS</p>
-                    <div class="feature1">
-                        <p><i class="fa-solid fa-gas-pump" id="f1"></i> Petrol</p>
-                        <p><i class="fa-solid fa-road" id="f1"></i> 4,000 km</p>
-                        <br><br>
-                        <p><i class="fa-solid fa-car" id="f1"></i> Sport</p>
-                        <p><i class="fa-solid fa-gear" id="f1"></i> Blue</p>
-                        <p><i class="fa-regular fa-calendar-days" id="f1"></i> 2022</p>
-                    </div>
-                </div>
-                <hr>
-                <p id="fas"><i class="fa-solid fa-star" id="f1"></i><i class="fa-solid fa-star" id="f1"></i><i
-                        class="fa-solid fa-star" id="f1"></i><i class="fa-solid fa-star" id="f1"></i><i
-                        class="fa-regular fa-star" id="f1"></i>(65 Reviews)</p>
+
+            <div class="input-wrapper">
+              <label for="people" class="input-label">Pax Number*</label>
+
+              <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">
             </div>
-            <div class="card1">
-                <div class="image"><img src="./images/car-3.jpg" alt=""></div>
-                <h1>BMW E46 M3 DISKI SERIE</h1>
-                <div class="feature">
-                    <p>NEW CAR / AUTOMATIC / SPORTS</p>
-                    <div class="feature1">
-                        <p><i class="fa-solid fa-gas-pump" id="f1"></i> Petrol</p>
-                        <p><i class="fa-solid fa-road" id="f1"></i> 4,000 km</p>
-                        <br><br>
-                        <p><i class="fa-solid fa-car" id="f1"></i> Sport</p>
-                        <p><i class="fa-solid fa-gear" id="f1"></i> Blue</p>
-                        <p><i class="fa-regular fa-calendar-days" id="f1"></i> 2022</p>
-                    </div>
-                </div>
-                <hr>
-                <p id="fas"><i class="fa-solid fa-star" id="f1"></i><i class="fa-solid fa-star" id="f1"></i><i
-                        class="fa-solid fa-star" id="f1"></i><i class="fa-solid fa-star" id="f1"></i><i
-                        class="fa-regular fa-star" id="f1"></i>(65 Reviews)</p>
+
+            <div class="input-wrapper">
+              <label for="checkin" class="input-label">Checkin Date**</label>
+
+              <input type="date" name="checkin" id="checkin" required class="input-field">
             </div>
+
+            <div class="input-wrapper">
+              <label for="checkout" class="input-label">Checkout Date*</label>
+
+              <input type="date" name="checkout" id="checkout" required class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">Inquire now</button>
+
+          </form>
+
         </div>
-        <div class="card">
-            <div class="card1">
-                <div class="image"><img src="./images/car-4.jpg" alt=""></div>
-                <h1>VOLKSWAGEN SCIROCCO 2016</h1>
-                <div class="feature">
-                    <p>NEW CAR / AUTOMATIC / SPORTS</p>
-                    <div class="feature1">
-                        <p><i class="fa-solid fa-gas-pump" id="f1"></i> Petrol</p>
-                        <p><i class="fa-solid fa-road" id="f1"></i> 4,000 km</p>
-                        <br><br>
-                        <p><i class="fa-solid fa-car" id="f1"></i> Sport</p>
-                        <p><i class="fa-solid fa-gear" id="f1"></i> Blue</p>
-                        <p><i class="fa-regular fa-calendar-days" id="f1"></i> 2022</p>
-                    </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #POPULAR
+      -->
+
+      <section class="popular" id="destination">
+        <div class="container">
+
+          <p class="section-subtitle">Uncover place</p>
+
+          <h2 class="h2 section-title">Popular destination</h2>
+
+          <p class="section-text">
+            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
+            Sit ornare
+            mollitia tenetur, aptent.
+          </p>
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="https://github.com/codewithsadee/tourly/blob/master/assets/images/popular-1.jpg?raw=true" alt="San miguel, italy" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Italy</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">San miguel</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
+                  </p>
+
                 </div>
-                <hr>
-                <p id="fas"><i class="fa-solid fa-star" id="f1"></i><i class="fa-solid fa-star" id="f1"></i><i
-                        class="fa-solid fa-star" id="f1"></i><i class="fa-solid fa-star" id="f1"></i><i
-                        class="fa-regular fa-star" id="f1"></i>(65 Reviews)</p>
-            </div>
-            <div class="card1">
-                <div class="image"><img src="./images/car-5.jpg" alt=""></div>
-                <h1>PORSCHE CAYEN LAST</h1>
-                <div class="feature">
-                    <p>NEW CAR / AUTOMATIC / SPORTS</p>
-                    <div class="feature1">
-                        <p><i class="fa-solid fa-gas-pump" id="f1"></i> Petrol</p>
-                        <p><i class="fa-solid fa-road" id="f1"></i> 4,000 km</p>
-                        <br><br>
-                        <p><i class="fa-solid fa-car" id="f1"></i> Sport</p>
-                        <p><i class="fa-solid fa-gear" id="f1"></i> Blue</p>
-                        <p><i class="fa-regular fa-calendar-days" id="f1"></i> 2022</p>
-                    </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="https://github.com/codewithsadee/tourly/blob/master/assets/images/popular-2.jpg?raw=true" alt="Burj khalifa, dubai" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Dubai</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Burj khalifa</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
+                  </p>
+
                 </div>
-                <hr>
-                <p id="fas"><i class="fa-solid fa-star" id="f1"></i><i class="fa-solid fa-star" id="f1"></i><i
-                        class="fa-solid fa-star" id="f1"></i><i class="fa-solid fa-star" id="f1"></i><i
-                        class="fa-regular fa-star" id="f1"></i>(65 Reviews)</p>
-            </div>
-            <div class="card1">
-                <div class="image"><img src="./images/car-6.jpg" alt=""></div>
-                <h1>LEXUS GS F</h1>
-                <div class="feature">
-                    <p>NEW CAR / AUTOMATIC / SPORTS</p>
-                    <div class="feature1">
-                        <p><i class="fa-solid fa-gas-pump" id="f1"></i> Petrol</p>
-                        <p><i class="fa-solid fa-road" id="f1"></i> 4,000 km</p>
-                        <br><br>
-                        <p><i class="fa-solid fa-car" id="f1"></i> Sport</p>
-                        <p><i class="fa-solid fa-gear" id="f1"></i> Blue</p>
-                        <p><i class="fa-regular fa-calendar-days" id="f1"></i> 2022</p>
-                    </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="https://github.com/codewithsadee/tourly/blob/master/assets/images/popular-3.jpg?raw=true" alt="Kyoto temple, japan" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Japan</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Kyoto temple</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
+                  </p>
+
                 </div>
-                <hr>
-                <p id="fas"><i class="fa-solid fa-star" id="f1"></i><i class="fa-solid fa-star" id="f1"></i><i
-                        class="fa-solid fa-star" id="f1"></i><i class="fa-solid fa-star" id="f1"></i><i
-                        class="fa-regular fa-star" id="f1"></i>(65 Reviews)</p>
-            </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary">More destintion</button>
+
         </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PACKAGE
+      -->
+
+      <section class="package" id="package">
+        <div class="container">
+
+          <p class="section-subtitle">Popular Packeges</p>
+
+          <h2 class="h2 section-title">Checkout Our Packeges</h2>
+
+          <p class="section-text">
+            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
+            Sit ornare
+            mollitia tenetur, aptent.
+          </p>
+
+          <ul class="package-list">
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="https://github.com/codewithsadee/tourly/blob/master/assets/images/packege-1.jpg?raw=true" alt="Experience The Great Holiday On Beach" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
+
+                  <p class="card-text">
+                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
+                    cras, aspernatur.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7D/6N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Malaysia</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(25 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    $750
+                    <span>/ per person</span>
+                  </p>
+
+                  <button class="btn btn-secondary">Book Now</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="https://github.com/codewithsadee/tourly/blob/master/assets/images/packege-2.jpg?raw=true" alt="Summer Holiday To The Oxolotan River" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Summer Holiday To The Oxolotan River</h3>
+
+                  <p class="card-text">
+                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
+                    cras, aspernatur.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7D/6N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Malaysia</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(20 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    $520
+                    <span>/ per person</span>
+                  </p>
+
+                  <button class="btn btn-secondary">Book Now</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="https://github.com/codewithsadee/tourly/blob/master/assets/images/packege-3.jpg?raw=true" alt="Santorini Island's Weekend Vacation" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Santorini Island's Weekend Vacation</h3>
+
+                  <p class="card-text">
+                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
+                    cras, aspernatur.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7D/6N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Malaysia</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(40 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    $660
+                    <span>/ per person</span>
+                  </p>
+
+                  <button class="btn btn-secondary">Book Now</button>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary">View All Packages</button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+
+          <p class="section-subtitle">Photo Gallery</p>
+
+          <h2 class="h2 section-title">Photo's From Travellers</h2>
+
+          <p class="section-text">
+            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
+            Sit ornare
+            mollitia tenetur, aptent.
+          </p>
+
+          <ul class="gallery-list">
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="https://github.com/codewithsadee/tourly/blob/master/assets/images/gallery-1.jpg?raw=true" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="https://github.com/codewithsadee/tourly/blob/master/assets/images/gallery-2.jpg?raw=true" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="https://github.com/codewithsadee/tourly/blob/master/assets/images/gallery-3.jpg?raw=true" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="https://github.com/codewithsadee/tourly/blob/master/assets/images/gallery-4.jpg?raw=true" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="https://github.com/codewithsadee/tourly/blob/master/assets/images/gallery-5.jpg?raw=true" alt="Gallery image">
+              </figure>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" id="contact">
+        <div class="container">
+
+          <div class="cta-content">
+            <p class="section-subtitle">Call To Action</p>
+
+            <h2 class="h2 section-title">Ready For Unforgatable Travel. Remember Us!</h2>
+
+            <p class="section-text">
+              Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque
+              laudantium. Sit ornare
+              mollitia tenetur, aptent.
+            </p>
+          </div>
+
+          <button class="btn btn-secondary">Contact Us !</button>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="https://raw.githubusercontent.com/codewithsadee/tourly/8b86a3737ef1a6bade31c395695721363a03c99b/assets/images/logo.svg" alt="Tourly logo">
+          </a>
+
+          <p class="footer-text">
+            Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia
+            at
+            perferendis, pretium, aenean aut ultrices.
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Feel free to contact and reach us !!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+91123456790" class="contact-link">+91 (73381) (43119)</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>1432 Bangalore, India</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Subscribe our newsletter for more update & news !!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
     </div>
 
+    <div class="footer-bottom">
+      <div class="container">
 
+        <p class="copyright">
+          &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
+        </p>
 
+        <ul class="footer-bottom-list">
 
-    <!-- ================================== OUR FACILITIES ================================= -->
-    <div class="home">
-        <div class="facility">
-            <h1>WE ARE THE BEST</h1>
-            <h2>OUR FACILITIES</h2>
-        </div>
-        <div class="facility1">
-            <div class="facility11">
-                <ion-icon name="shield-checkmark-outline" id="i2"></ion-icon>
-                <h2>Highly secured</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Similique doloribus dolorum, magni, magnam iure culpa earum
-                    porro deserunt ipsa .</p>
-                <h3>Read More</h3>
-            </div>
-            <div class="facility11">
-                <i class="fa-regular fa-handshake" id="i2"></i>
-                <h2>Trusted Partners</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Similique doloribus dolorum, magni, magnam iure culpa earum
-                    porro deserunt ipsa .</p>
-                <h3>Read More</h3>
-            </div>
-            <div class="facility11">
-                <i class="fa-solid fa-percent" id="i2"></i>
-                <h2> Get an Offer</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Similique doloribus dolorum, magni, magnam iure culpa earum
-                    porro deserunt ipsa .</p>
-                <h3>Read More</h3>
-            </div>
-            <div class="facility11">
-                <i class="fa-solid fa-square-phone" id="i2"></i>
-                <h2>Free support</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Similique doloribus dolorum, magni, magnam iure culpa earum
-                    porro deserunt ipsa .</p>
-                <h3>Read More</h3>
-            </div>
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
 
-        </div>
-        <div class="button1">
-            <button>Learn More</button>
-        </div>
+          <li>
+            <a href="#" class="footer-bottom-link">Term & Condition</a>
+          </li>
 
-        <div class="facility">
-            <h1>LATEST OFFERS</h1>
-            <h2>OUR OFFERS</h2>
-        </div>
-        <div class="cars">
-            <div class="cars1" id="d1">
-                <button>NEW</button>
-                <div class="amount" id="amount1">
-                    <p id="a1">$
-                    <p>
-                    <p id="a2">650</p>
-                    <p id="a3">/month </p><br>
-                    <p id="a3">Toyoto Prius</p>
-                </div>
-            </div>
-            <div class="cars1" id="d2"></div>
-            <div class="cars1" id="d3">
-                <button>NEW</button>
-                <div class="amount" id="amount3">
-                    <p id="a1">$</p>
-                    <p id="a2">480</p>
-                    <p id="a3">/month
-                    </p><br>
-                    <p id="a3">Red Ferrari Car 2018</p>
-                </div>
-            </div>
-            <div class="cars1" id="d4">
-                <button>NEW</button>
-                <div class="amount" id="amount4">
-                    <p id="a1">$</p>
-                    <p id="a2">740</p>
-                    <p id="a3">/month
-                    </p><br>
-                    <p id="a3">Lamborghini Hurican</p>
-                </div>
-            </div>
-            <div class="cars1" id="d5">
-                <button>NEW</button>
-                <div class="amount" id="amount5">
-                    <p id="a1">$</p>
-                    <p id="a2">950</p>
-                    <p id="a3">/month
-                    </p><br>
-                    <p id="a3">Lamborghini</p>
-                </div>
-            </div>
-        </div>
+          <li>
+            <a href="#" class="footer-bottom-link">FAQ</a>
+          </li>
+
+        </ul>
+
+      </div>
     </div>
 
+  </footer>
 
 
 
 
 
-    <!-- ======================================= FOOTER =========================================== -->
+  <!-- 
+    - #GO TO TOP
+  -->
 
-    <div class="log">
-        <img src="./images/brand-1.png" alt="">
-        <img src="./images/brand-2.png" alt="">
-        <img src="./images/brand-3.png" alt="">
-        <img src="./images/brand-4.png" alt="">
-    </div>
-    <footer>
-        <div id="fmain1">
-            <h2>SUBSCRIBE NEWSLETTER</h2>
-            <article>
-                <input type="email" placeholder="Email Address...">
-                <button>Send</button>
-            </article>
-        </div>
-        <div id="footmain">
-            <div id="one">
-                <h1>Autocar</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet ratione eos dicta necessitatibus
-                    inventore corrupti nemo sapiente sed et? At, saepe maiores adipisci inventore obcaecati tempore
-                    quaerat
-                    reiciendis illum corporis.</p>
-            </div>
-            <div id="two">
-                <h2>Contact Info</h2>
-                <div class="c">
-                    <i class="fa-solid fa-location-dot fa-xl"></i>
-                    <p>Address: 44 New Design Street,</p>
-                </div>
-                <div class="c">
-                    <i class="fa-solid fa-phone fa-xl"></i>
-                    <p>+0477 85X6 552</p>
-                </div>
-                <div class="c">
-                    <i class="fa-solid fa-envelope fa-xl"></i>
-                    <p>info@themevessel.com</p>
-                </div>
-            </div>
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
 
-            <div id="three">
-                <h2>Useful Links</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="./aboutUs.html">About Us</a></li>
-                    <li><a href="./contactUs.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div>
-                <h2>Our Gallery</h2>
-                <div class="gal">
-                    <div class="galc">
-                        <img src="./images/small-car-1.jpg" alt="">
-                        <img src="./images/small-car-2.jpg" alt="">
-                        <img src="./images/small-car-3.jpg" alt="">
-                    </div>
-                    <div class="galc">
-                        <img src="./images/small-car-4.jpg" alt="">
-                        <img src="./images/small-car-5.jpg" alt="">
-                        <img src="./images/small-car-6.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr style="color: white; font-size: 3px; opacity: 0.3;">
-        <div id="four">
-            <p>&copy 2022 Theme Vessel. All Rights Reserved</p>
-            <ul>
-                <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter"></i></a> </li>
-                <li><a href=""><i class="fab fa-instagram" style="padding: 60%;"></i></a> </li>
-                <li><a href=""><i class="fab fa-youtube"></i> </a></li>
-            </ul>
-        </div>
-    </footer>
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <!-- <script src="./assets/js/script.js"></script> -->
+
+  <!-- 
+    - ionicon link
+  -->
+  <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+
 </body>
 
 </html>
