@@ -26,6 +26,13 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.opoo.maven/tomcat9-war-runner -->
+<dependency>
+    <groupId>org.opoo.maven</groupId>
+    <artifactId>tomcat9-war-runner</artifactId>
+    <version>3.0.1</version>
+</dependency>
+
   </dependencies>
 
   <build>
