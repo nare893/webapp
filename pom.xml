@@ -73,4 +73,12 @@
       </plugins>
     </pluginManagement>
   </build>
+  
+<servers>
+    <server>
+        <id>tomcat-server</id>
+        <username>admin</username>
+        <password>admin</password>
+    </server>
+</servers>
 </project>
