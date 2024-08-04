@@ -53,9 +53,14 @@
           <artifactId>maven-war-plugin</artifactId>
           <version>3.2.2</version>
         </plugin>
-         <plugin>
-            <artifactId>tomcat9-maven-plugin</artifactId>
-            <version>9.0.91</version> 
+        <plugin>
+         <artifactId>tomcat9-maven-plugin</artifactId>
+            <version>2.2</version> <!-- Ensure this is a valid and available version -->
+            <configuration>
+                <url>http://localhost:8080/manager/text</url>
+                <server>tomcat-server</server>
+                <path>/your-app</path>
+            </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
