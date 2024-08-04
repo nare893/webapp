@@ -55,7 +55,7 @@
         </plugin>
          <plugin>
             <artifactId>tomcat9-maven-plugin</artifactId>
-            <version>2.2</version> 
+            <version>9.0.91</version> 
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
